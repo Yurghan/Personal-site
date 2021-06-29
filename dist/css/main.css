@@ -1,0 +1,76 @@
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BEM Naming:
+    BLOCK      -->   .block
+    ELEMENT    -->   .block__element
+    MODIFIER   -->   .block--property-mod (.example--color-red)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CSS PROPERTIES ORDER
+
+    .example{
+        //Position
+        position: 
+        z-index: 
+        top: 
+        right: 
+
+        //Display & Box Model
+        display: 
+        overflow: 
+        box-sizing: 
+        width: 
+        height: 
+        padding:
+        border:
+        margin:
+
+        //Color
+        background:
+        color:
+
+        //Text
+        font-family:
+        font-size:
+        line-height:
+        text-align:
+
+        //Other
+        Every other property I'm not able to put somewhere else. 
+        For example - cursor.
+    }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 10px; }
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Changes to core HTML tags 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Simple classes to modify HTML elements quicker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.py-2 {
+  padding: 2rem, 0; }
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules of webiste I'm going to use again and again
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.btn-dark {
+  background: black; }
+
+.sectionFront {
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/background.jpg) center bottom/cover;
+  color: #ffffff; }

@@ -1,0 +1,55 @@
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BEM Naming:
+    BLOCK      -->   .block
+    ELEMENT    -->   .block__element
+    MODIFIER   -->   .block--property-mod (.example--color-red)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CSS PROPERTIES ORDER
+
+    .example{
+        //Position
+        position: 
+        z-index: 
+        top: 
+        right: 
+
+        //Display & Box Model
+        display: 
+        overflow: 
+        box-sizing: 
+        width: 
+        height: 
+        padding:
+        border:
+        margin:
+
+        //Color
+        background:
+        color:
+
+        //Text
+        font-family:
+        font-size:
+        line-height:
+        text-align:
+
+        //Other
+        Every other property I'm not able to put somewhere else. 
+        For example - cursor.
+    }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+@import 'components/variables', 'components/reset', 'components/general_styles',
+  'components/utility_classes', 'components/sitewide';
+
+.sectionFront {
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/background.jpg) center bottom/cover;
+  color: $color-white;
+
+  &__logo {
+  }
+}
