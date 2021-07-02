@@ -43,34 +43,329 @@ CSS PROPERTIES ORDER
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  cursor: default; }
 
 html {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
   font-size: 10px; }
+
+body::-webkit-scrollbar {
+  width: 1rem; }
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey; }
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Changes to core HTML tags 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Simple classes to modify HTML elements quicker
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-.py-2 {
-  padding: 2rem, 0; }
+a {
+  color: unset;
+  text-decoration: unset;
+  cursor: pointer; }
 
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Modules of webiste I'm going to use again and again
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-.btn-dark {
-  background: black; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400; }
 
-.sectionFront {
+.sectionFirst {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  grid-template-rows: 2fr 8fr;
+  grid-template-areas: 'lo me' 'ce ce';
   width: 100vw;
   height: 100vh;
   background: url(../src/background.jpg) center bottom/cover;
   color: #ffffff; }
+  .sectionFirst__logo {
+    grid-area: lo; }
+    .sectionFirst__logo__h {
+      width: fit-content;
+      height: fit-content;
+      padding: 1.5rem;
+      border: 0.2rem solid #ffffff;
+      border-bottom-left-radius: 3rem;
+      border-top-right-radius: 3rem;
+      margin: 1rem;
+      background: rgba(0, 0, 0, 0.2);
+      font-family: 'Black Ops One', cursive;
+      font-size: 4.2rem;
+      font-weight: 400;
+      -webkit-text-stroke-width: 0.1rem;
+      -webkit-text-stroke-color: #000000; }
+  .sectionFirst__menu {
+    grid-area: me; }
+    .sectionFirst__menu__ul {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+      font-size: 2.4rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      list-style: none; }
+      .sectionFirst__menu__ul__li {
+        margin: 1.5rem; }
+        .sectionFirst__menu__ul__li:hover {
+          border-bottom: 0.2rem solid #cccccc; }
+        .sectionFirst__menu__ul__li__current {
+          border-bottom: 0.2rem solid #ef3c40; }
+          .sectionFirst__menu__ul__li__current:hover {
+            border-bottom: 0.2rem solid #ef3c40; }
+        .sectionFirst__menu__ul__li__a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          -webkit-text-stroke-width: 0.1rem;
+          -webkit-text-stroke-color: #000000; }
+        .sectionFirst__menu__ul__li__img {
+          height: 3rem;
+          cursor: pointer; }
+          .sectionFirst__menu__ul__li__img:hover {
+            transform: scale(1.1); }
+  .sectionFirst__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: ce;
+    margin-top: 20vh; }
+    .sectionFirst__center__introduction {
+      margin-bottom: 1rem;
+      font-size: 6rem;
+      font-weight: 800;
+      -webkit-text-stroke-width: 0.2rem;
+      -webkit-text-stroke-color: #000000; }
+    .sectionFirst__center__explanation {
+      margin-bottom: 2rem;
+      font-size: 2.8rem;
+      font-weight: 800;
+      -webkit-text-stroke-width: 0.1rem;
+      -webkit-text-stroke-color: #000000; }
+    .sectionFirst__center__btn {
+      background: #f4f4f4;
+      color: #000000;
+      font-size: 2.2rem; }
+      .sectionFirst__center__btn:hover {
+        transition: all 0.1s ease-in-out;
+        background: #ef3c40;
+        color: #ffffff; }
+      .sectionFirst__center__btn__a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem; }
+
+.sectionSecond {
+  display: grid;
+  grid-template-rows: 6fr 4fr;
+  width: 100vw;
+  height: 100vh; }
+  .sectionSecond__partA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background: #ffffff; }
+    .sectionSecond__partA__h {
+      margin-bottom: 1rem;
+      font-size: 4.6rem;
+      text-transform: uppercase; }
+    .sectionSecond__partA__separator {
+      width: 5rem;
+      height: 0.3rem;
+      margin-bottom: 1rem;
+      background: #ef3c40; }
+    .sectionSecond__partA__p {
+      font-size: 2.4rem; }
+    .sectionSecond__partA__descriptions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      .sectionSecond__partA__descriptions__module {
+        padding: 3rem 6rem;
+        text-align: center; }
+        .sectionSecond__partA__descriptions__module__i {
+          padding-bottom: 1rem;
+          color: #ef3c40;
+          font-size: 4.2rem; }
+        .sectionSecond__partA__descriptions__module__h {
+          font-size: 3.2rem; }
+        .sectionSecond__partA__descriptions__module__p {
+          font-size: 2.4rem; }
+  .sectionSecond__partB {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #f4f4f4;
+    font-size: 3.2rem; }
+    .sectionSecond__partB__module {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .sectionSecond__partB__module:nth-child(2) {
+        background: #cccccc; }
+      .sectionSecond__partB__module__i {
+        padding-bottom: 1rem;
+        color: #ef3c40;
+        font-size: 4.6rem; }
+
+.sectionThird {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff; }
+  .sectionThird__title {
+    font-size: 4.6rem;
+    text-transform: uppercase; }
+  .sectionThird__separator {
+    width: 5rem;
+    height: 0.3rem;
+    margin-bottom: 1rem;
+    background: #ef3c40; }
+  .sectionThird__description {
+    font-size: 2.4rem;
+    padding-bottom: 4rem; }
+  .sectionThird__process {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 30vh); }
+    .sectionThird__process__module {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 3rem 4rem; }
+      .sectionThird__process__module:nth-child(1), .sectionThird__process__module:nth-child(4) {
+        background: #cccccc; }
+      .sectionThird__process__module:nth-child(2), .sectionThird__process__module:nth-child(3) {
+        background: #f4f4f4; }
+      .sectionThird__process__module__i {
+        position: relative;
+        padding: 2.5rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        background: #333;
+        color: #ffffff;
+        font-size: 4.6rem; }
+        .sectionThird__process__module__i__stepNum {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 3.5rem;
+          height: 3.5rem;
+          padding: 0.5rem;
+          border-radius: 50%;
+          background: #ef3c40;
+          color: #ffffff;
+          font-size: 2rem;
+          text-align: center; }
+      .sectionThird__process__module__h {
+        font-size: 2.8rem;
+        text-transform: uppercase; }
+      .sectionThird__process__module__p {
+        font-size: 2.2rem;
+        text-align: center; }
+      .sectionThird__process__module:hover .sectionThird__process__module__i {
+        background: #ef3c40; }
+        .sectionThird__process__module:hover .sectionThird__process__module__i__stepNum {
+          background: #333; }
+  .sectionThird__summary {
+    margin: 0 25vw;
+    text-align: center; }
+    .sectionThird__summary__h {
+      margin-top: 4rem;
+      font-size: 2.4rem; }
+    .sectionThird__summary__p {
+      font-size: 1.8rem; }
+
+.sectionFourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 92vh;
+  background: #ffffff;
+  text-align: center; }
+  .sectionFourth__title {
+    font-size: 4.6rem;
+    text-transform: uppercase; }
+  .sectionFourth__separator {
+    width: 5rem;
+    height: 0.3rem;
+    margin-bottom: 1rem;
+    background: #ef3c40; }
+  .sectionFourth__description {
+    font-size: 2.4rem;
+    margin-bottom: 4rem; }
+  .sectionFourth__choice {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .sectionFourth__choice__program {
+      display: grid;
+      grid-template-rows: 9fr 1fr;
+      width: 25vw;
+      height: 60vh;
+      padding: 3rem;
+      border-radius: 1rem;
+      margin: 0 3rem;
+      -webkit-box-shadow: 3px 3px 5px 6px #000000;
+      -moz-box-shadow: 3px 3px 5px 6px #000000;
+      box-shadow: 0.5rem 0.5rem 1rem #000000; }
+      .sectionFourth__choice__program__up__h {
+        font-size: 4rem;
+        text-transform: uppercase; }
+      .sectionFourth__choice__program__up__p {
+        margin-bottom: 3rem;
+        font-size: 1.6rem; }
+      .sectionFourth__choice__program__up__ul {
+        font-size: 2.4rem;
+        list-style: none; }
+        .sectionFourth__choice__program__up__ul__li {
+          margin-bottom: 2.2rem; }
+          .sectionFourth__choice__program__up__ul__li__check {
+            color: #088d1e; }
+      .sectionFourth__choice__program__down {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center; }
+        .sectionFourth__choice__program__down__btn {
+          padding: 2.5rem;
+          border-radius: 10rem;
+          background: #cccccc;
+          font-size: 2.2rem; }
+          .sectionFourth__choice__program__down__btn:hover {
+            background: #ef3c40;
+            color: #ffffff;
+            transition: all 0.2s ease-in-out; }
+  .sectionFourth__p1 {
+    margin-top: 2rem;
+    font-size: 2.4rem; }
+    .sectionFourth__p1__underline {
+      text-decoration: underline; }
+  .sectionFourth__p2 {
+    font-size: 1.8rem; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 8vh;
+  background: #333;
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-align: center; }

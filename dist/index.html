@@ -12,8 +12,15 @@
         to improve your experience.
       </p>
     <![endif]-->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
     <link rel="icon" href="src/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald" />
@@ -21,24 +28,389 @@
   </head>
   <body>
     <!-- Section no. 1 -->
-    <section class="sectionFront">
-      <div class="sectionFront__logo">WebMilo</div>
-      <div class="sectionFront__menu">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-          <li>flag</li>
+    <section class="sectionFirst">
+      <div class="sectionFirst__logo">
+        <h1 class="sectionFirst__logo__h">WebMilo</h1>
+      </div>
+      <div class="sectionFirst__menu">
+        <ul class="sectionFirst__menu__ul">
+          <li
+            class="
+              sectionFirst__menu__ul__li sectionFirst__menu__ul__li__current
+            "
+          >
+            <a class="sectionFirst__menu__ul__li__a" href="#">Home</a>
+          </li>
+          <li class="sectionFirst__menu__ul__li">
+            <a class="sectionFirst__menu__ul__li__a" href="#">About</a>
+          </li>
+          <li class="sectionFirst__menu__ul__li">
+            <a class="sectionFirst__menu__ul__li__a" href="#">Portfolio</a>
+          </li>
+          <li class="sectionFirst__menu__ul__li">
+            <a class="sectionFirst__menu__ul__li__a" href="#">Contact</a>
+          </li>
+          <li class="sectionFirst__menu__ul__li">
+            <a href="#"
+              ><img
+                class="sectionFirst__menu__ul__li__img"
+                src="./src/pol.png"
+                alt="polski"
+            /></a>
+          </li>
+          <li class="sectionFirst__menu__ul__li">
+            <a href="#"
+              ><img
+                class="sectionFirst__menu__ul__li__img"
+                src="./src/uk.png"
+                alt="english"
+            /></a>
+          </li>
         </ul>
       </div>
-      <div class="sectionFront__center">
-        <h2 class="sectionFront__center__introduction">
-          Lorem ipsum dolor sit.
+      <div class="sectionFirst__center">
+        <h2 class="sectionFirst__center__introduction">
+          I'm Milos The
+          <span
+            class="txt-type"
+            data-wait="3000"
+            data-words='["Web Developer", "WordPress Programist", "SEO Specialist"]'
+          ></span>
         </h2>
-        <h3 class="explanation">Lorem ipsum dolor sit amet.</h3>
-        <div class="btn">Check my work</div>
+        <h3 class="sectionFirst__center__explanation">
+          I specialize in web programming, WordPress and SEO
+        </h3>
+        <div class="sectionFirst__center__btn">
+          <a class="sectionFirst__center__btn__a" href="#">Check my work</a>
+        </div>
       </div>
     </section>
+
+    <!-- Section no. 2 -->
+    <section class="sectionSecond">
+      <div class="sectionSecond__partA">
+        <h3 class="sectionSecond__partA__h">I work with</h3>
+        <div class="sectionSecond__partA__separator"></div>
+        <p class="sectionSecond__partA__p">A short description of what I do</p>
+
+        <div class="sectionSecond__partA__descriptions">
+          <div class="sectionSecond__partA__descriptions__module">
+            <i
+              class="sectionSecond__partA__descriptions__module__i lni lni-code"
+            ></i>
+            <h3 class="sectionSecond__partA__descriptions__module__h">
+              Front-End Development
+            </h3>
+            <p class="sectionSecond__partA__descriptions__module__p">
+              I develop websites based on the latest technologies and trends. I
+              make sure that my websites are fast, safe and mobile-friendly.
+            </p>
+          </div>
+
+          <div class="sectionSecond__partA__descriptions__module">
+            <i
+              class="
+                sectionSecond__partA__descriptions__module__i
+                lni lni-wordpress-filled
+              "
+            ></i>
+            <h3 class="sectionSecond__partA__descriptions__module__h">
+              WordPress Development
+            </h3>
+            <p class="sectionSecond__partA__descriptions__module__p">
+              I create websites based on content management system - WordPress.
+              Adding content yourself on such a site does not require any
+              technical knowledge.
+            </p>
+          </div>
+
+          <div class="sectionSecond__partA__descriptions__module">
+            <i
+              class="sectionSecond__partA__descriptions__module__i lni lni-cart"
+            ></i>
+            <h3 class="sectionSecond__partA__descriptions__module__h">
+              e-Commerce Websites
+            </h3>
+            <p class="sectionSecond__partA__descriptions__module__p">
+              I create fully functional online stores with a modern design that
+              helps achieve good sales results. I configure payment and delivery
+              methods.
+            </p>
+          </div>
+
+          <div class="sectionSecond__partA__descriptions__module">
+            <i
+              class="
+                sectionSecond__partA__descriptions__module__i
+                lni lni-stats-up
+              "
+            ></i>
+            <h3 class="sectionSecond__partA__descriptions__module__h">
+              On-Page SEO
+            </h3>
+            <p class="sectionSecond__partA__descriptions__module__p">
+              I take care of many elements of the website in terms of Search
+              Engine Optimization. This is crucial in achieving a high position
+              on Google.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionSecond__partB">
+        <div class="sectionSecond__partB__module">
+          <i class="sectionSecond__partB__module__i lni lni-user"></i>
+          <h3 class="sectionSecond__partB__module__title">Clients</h3>
+          <p class="sectionSecond__partB__module__number">+30</p>
+        </div>
+        <div class="sectionSecond__partB__module">
+          <i class="sectionSecond__partB__module__i lni lni-timer"></i>
+          <h3 class="sectionSecond__partB__module__title">Hours Worked</h3>
+          <p class="sectionSecond__partB__module__number">+1000</p>
+        </div>
+        <div class="sectionSecond__partB__module">
+          <i
+            class="sectionSecond__partB__module__i lni lni-checkmark-circle"
+          ></i>
+          <h3 class="sectionSecond__partB__module__title">Finished Projects</h3>
+          <p class="sectionSecond__partB__module__number">+50</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section no. 3 -->
+
+    <section class="sectionThird">
+      <h2 class="sectionThird__title">My workflow</h2>
+      <div class="sectionThird__separator"></div>
+      <p class="sectionThird__description">
+        I would like to show you how I'm working
+      </p>
+      <div class="sectionThird__process">
+        <div class="sectionThird__process__module">
+          <i class="sectionThird__process__module__i lni lni-invention">
+            <div class="sectionThird__process__module__i__stepNum">I</div>
+          </i>
+          <h3 class="sectionThird__process__module__h">Planning</h3>
+          <p class="sectionThird__process__module__p">
+            After reviewing your needs, I will prepare a comprehensive site
+            plan. I will present an initial vision of the appearance and
+            functioning of the website. I will analyze SEO and prepare an action
+            plan in this area.
+          </p>
+        </div>
+
+        <div class="sectionThird__process__module">
+          <i class="sectionThird__process__module__i lni lni-users">
+            <div class="sectionThird__process__module__i__stepNum">II</div>
+          </i>
+          <h3 class="sectionThird__process__module__h">Consultation</h3>
+          <p class="sectionThird__process__module__p">
+            After presenting my website plan, we will discuss to define the
+            final project plan. The feedback obtained at this stage of the work
+            will be extremely important in the further development process.
+          </p>
+        </div>
+
+        <div class="sectionThird__process__module">
+          <i class="sectionThird__process__module__i lni lni-cogs">
+            <div class="sectionThird__process__module__i__stepNum">III</div>
+          </i>
+          <h3 class="sectionThird__process__module__h">Coding</h3>
+          <p class="sectionThird__process__module__p">
+            When I know your expectations and create a project plan, I will
+            start working. I will prepare the website code that defines how it
+            looks like and how it works.
+          </p>
+        </div>
+
+        <div class="sectionThird__process__module">
+          <i class="sectionThird__process__module__i lni lni-thumbs-up">
+            <div class="sectionThird__process__module__i__stepNum">IV</div>
+          </i>
+          <h3 class="sectionThird__process__module__h">Testing</h3>
+          <p class="sectionThird__process__module__p">
+            After creating the website, I will conduct the necessary tests to be
+            sure of the quality of the service provided. If you like, I will
+            advise you on the choice of hoshing and transfer it for you.
+          </p>
+        </div>
+      </div>
+
+      <div class="sectionThird__summary">
+        <h3 class="sectionThird__summary__h">The Effect</h3>
+        <p class="sectionThird__summary__p">
+          The result of the process described above is a website that is
+          user-friendly and does well in the fight for ranking on Google. This
+          will allow you to achieve your goals easier.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section no. 4 -->
+
+    <section class="sectionFourth">
+      <h2 class="sectionFourth__title">Pricing of my services</h2>
+      <div class="sectionFourth__separator"></div>
+      <p class="sectionFourth__description">
+        Choose program which fits your needs
+      </p>
+
+      <div class="sectionFourth__choice">
+        <div class="sectionFourth__choice__program">
+          <div class="sectionFourth__choice__program__up">
+            <h3 class="sectionFourth__choice__program__up__h">Basic</h3>
+            <p class="sectionFourth__choice__program__up__p">
+              Good for small sites
+            </p>
+            <ul class="sectionFourth__choice__program__up__ul">
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                1-4 pages
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Responsive Design
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Search Engine Optimization
+              </li>
+            </ul>
+          </div>
+
+          <div class="sectionFourth__choice__program__down">
+            <a class="sectionFourth__choice__program__down__btn" href="#"
+              >Get a quote</a
+            >
+          </div>
+        </div>
+
+        <div class="sectionFourth__choice__program">
+          <div class="sectionFourth__choice__program__up">
+            <h3 class="sectionFourth__choice__program__up__h">Standard</h3>
+            <p class="sectionFourth__choice__program__up__p">
+              Great for medium size sites
+            </p>
+            <ul class="sectionFourth__choice__program__up__ul">
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                5-10 pages
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Responsive Design
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Search Engine Optimization
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                E-mail Setup
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Content Menagment System
+              </li>
+            </ul>
+          </div>
+
+          <div class="sectionFourth__choice__program__down">
+            <a class="sectionFourth__choice__program__down__btn" href="#"
+              >Get a quote</a
+            >
+          </div>
+        </div>
+
+        <div class="sectionFourth__choice__program">
+          <div class="sectionFourth__choice__program__up">
+            <h3 class="sectionFourth__choice__program__up__h">Premium</h3>
+            <p class="sectionFourth__choice__program__up__p">
+              Perfect for big sites and shops
+            </p>
+            <ul class="sectionFourth__choice__program__up__ul">
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                +10 pages
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Responsive Design
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Search Engine Optimization
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                E-mail Setup
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                Content Menagment System
+              </li>
+              <li class="sectionFourth__choice__program__up__ul__li">
+                <span class="sectionFourth__choice__program__up__ul__li__check"
+                  >&check;</span
+                >
+                E-commerce Functionality
+              </li>
+            </ul>
+          </div>
+
+          <div class="sectionFourth__choice__program__down">
+            <a class="sectionFourth__choice__program__down__btn" href="#"
+              >Get a quote</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <p class="sectionFourth__p1">
+        Please feel free to
+        <a class="sectionFourth__p1__underline" href="#">contact me</a>
+        if you are unsure. I will help you make the right choice!
+      </p>
+      <p class="sectionFourth__p2">
+        The above options are for reference only. Together, we will determine
+        your needs and then adjust the individual service package.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Copyright &copy; WebMilo <span id="year">.</span> - All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="js/typewriter.js"></script>
+    <script src="js/year.js"></script>
   </body>
 </html>

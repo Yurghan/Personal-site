@@ -41,15 +41,418 @@ CSS PROPERTIES ORDER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-@import 'components/variables', 'components/reset', 'components/general_styles',
-  'components/utility_classes', 'components/sitewide';
+@import 'components/variables', 'components/init', 'components/core_tags',
+  'components/rwd';
 
-.sectionFront {
+.sectionFirst {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  grid-template-rows: 2fr 8fr;
+  grid-template-areas:
+    'lo me'
+    'ce ce';
   width: 100vw;
   height: 100vh;
   background: url(../src/background.jpg) center bottom/cover;
   color: $color-white;
 
   &__logo {
+    grid-area: lo;
+
+    &__h {
+      width: fit-content;
+      height: fit-content;
+      padding: 1.5rem;
+      border: 0.2rem solid $color-white;
+      border-bottom-left-radius: 3rem;
+      border-top-right-radius: 3rem;
+      margin: 1rem;
+      background: rgba($color: $color-black, $alpha: 0.2);
+      font-family: 'Black Ops One', cursive;
+      font-size: 4.2rem;
+      font-weight: 400;
+      -webkit-text-stroke-width: 0.1rem;
+      -webkit-text-stroke-color: $color-black;
+    }
   }
+
+  &__menu {
+    grid-area: me;
+
+    &__ul {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+      font-size: 2.4rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      list-style: none;
+
+      &__li {
+        margin: 1.5rem;
+
+        &:hover {
+          border-bottom: 0.2rem solid $color-grey;
+        }
+
+        &__current {
+          border-bottom: 0.2rem solid $color-red;
+
+          &:hover {
+            border-bottom: 0.2rem solid $color-red;
+          }
+        }
+
+        &__a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          -webkit-text-stroke-width: 0.1rem;
+          -webkit-text-stroke-color: $color-black;
+        }
+
+        &__img {
+          height: 3rem;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: ce;
+    margin-top: 20vh;
+
+    &__introduction {
+      margin-bottom: 1rem;
+      font-size: 6rem;
+      font-weight: 800;
+      -webkit-text-stroke-width: 0.2rem;
+      -webkit-text-stroke-color: $color-black;
+    }
+    &__explanation {
+      margin-bottom: 2rem;
+      font-size: 2.8rem;
+      font-weight: 800;
+      -webkit-text-stroke-width: 0.1rem;
+      -webkit-text-stroke-color: $color-black;
+    }
+
+    &__btn {
+      background: $color-light;
+      color: $color-black;
+      font-size: 2.2rem;
+
+      &:hover {
+        transition: all 0.1s ease-in-out;
+        background: $color-red;
+        color: $color-white;
+      }
+
+      &__a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+
+.sectionSecond {
+  display: grid;
+  grid-template-rows: 6fr 4fr;
+  width: 100vw;
+  height: 100vh;
+
+  &__partA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background: $color-white;
+
+    &__h {
+      margin-bottom: 1rem;
+      font-size: 4.6rem;
+      text-transform: uppercase;
+    }
+    &__separator {
+      width: 5rem;
+      height: 0.3rem;
+      margin-bottom: 1rem;
+      background: $color-red;
+    }
+    &__p {
+      font-size: 2.4rem;
+    }
+    &__descriptions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      &__module {
+        padding: 3rem 6rem;
+        text-align: center;
+
+        &__i {
+          padding-bottom: 1rem;
+          color: $color-red;
+          font-size: 4.2rem;
+        }
+
+        &__h {
+          font-size: 3.2rem;
+        }
+        &__p {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+  &__partB {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: $color-light;
+    font-size: 3.2rem;
+
+    &__module {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &:nth-child(2) {
+        background: $color-grey;
+      }
+
+      &__i {
+        padding-bottom: 1rem;
+        color: $color-red;
+        font-size: 4.6rem;
+      }
+    }
+  }
+}
+
+.sectionThird {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: $color-white;
+
+  &__title {
+    font-size: 4.6rem;
+    text-transform: uppercase;
+  }
+
+  &__separator {
+    width: 5rem;
+    height: 0.3rem;
+    margin-bottom: 1rem;
+    background: $color-red;
+  }
+
+  &__description {
+    font-size: 2.4rem;
+    padding-bottom: 4rem;
+  }
+
+  &__process {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 30vh);
+
+    &__module {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 3rem 4rem;
+      &:nth-child(1),
+      &:nth-child(4) {
+        background: $color-grey;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        background: $color-light;
+      }
+
+      &__i {
+        position: relative;
+        padding: 2.5rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        background: $color-dark;
+        color: $color-white;
+        font-size: 4.6rem;
+
+        &__stepNum {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 3.5rem;
+          height: 3.5rem;
+          padding: 0.5rem;
+          border-radius: 50%;
+          background: $color-red;
+          color: $color-white;
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+
+      &__h {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+      }
+
+      &__p {
+        font-size: 2.2rem;
+        text-align: center;
+      }
+
+      &:hover {
+        .sectionThird__process__module__i {
+          background: $color-red;
+
+          &__stepNum {
+            background: $color-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &__summary {
+    margin: 0 25vw;
+    text-align: center;
+    &__h {
+      margin-top: 4rem;
+      font-size: 2.4rem;
+    }
+    &__p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.sectionFourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 92vh;
+  background: $color-white;
+  text-align: center;
+
+  &__title {
+    font-size: 4.6rem;
+    text-transform: uppercase;
+  }
+
+  &__separator {
+    width: 5rem;
+    height: 0.3rem;
+    margin-bottom: 1rem;
+    background: $color-red;
+  }
+
+  &__description {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  &__choice {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__program {
+      display: grid;
+      grid-template-rows: 9fr 1fr;
+      width: 25vw;
+      height: 60vh;
+      padding: 3rem;
+      border-radius: 1rem;
+      margin: 0 3rem;
+      -webkit-box-shadow: 3px 3px 5px 6px $color-black;
+      -moz-box-shadow: 3px 3px 5px 6px $color-black;
+      box-shadow: 0.5rem 0.5rem 1rem $color-black;
+
+      &__up {
+        &__h {
+          font-size: 4rem;
+          text-transform: uppercase;
+        }
+        &__p {
+          margin-bottom: 3rem;
+          font-size: 1.6rem;
+        }
+        &__ul {
+          font-size: 2.4rem;
+          list-style: none;
+
+          &__li {
+            margin-bottom: 2.2rem;
+            &__check {
+              color: $color-green;
+            }
+          }
+        }
+      }
+
+      &__down {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &__btn {
+          padding: 2.5rem;
+          border-radius: 10rem;
+          background: $color-grey;
+          font-size: 2.2rem;
+
+          &:hover {
+            background: $color-red;
+            color: $color-white;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  &__p1 {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+
+    &__underline {
+      text-decoration: underline;
+    }
+  }
+
+  &__p2 {
+    font-size: 1.8rem;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 8vh;
+  background: $color-dark;
+  color: $color-white;
+  font-size: 1.8rem;
+  text-align: center;
 }
