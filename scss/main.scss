@@ -44,9 +44,11 @@ CSS PROPERTIES ORDER
 @import 'components/variables', 'components/init', 'components/core_tags',
   'components/rwd';
 
+@import 'pages/about', 'pages/portfolio', 'pages/contact';
+
 .sectionFirst {
   display: grid;
-  grid-template-columns: 3fr 8fr;
+  grid-template-columns: 3fr 7fr;
   grid-template-rows: 2fr 8fr;
   grid-template-areas:
     'lo me'
@@ -90,16 +92,18 @@ CSS PROPERTIES ORDER
 
       &__li {
         margin: 1.5rem;
+        border-bottom: 0.3rem solid transparent;
 
         &:hover {
-          border-bottom: 0.2rem solid $color-grey;
+          border-color: $color-grey;
+          transition: border-color 0.2s ease-in-out;
         }
 
         &__current {
-          border-bottom: 0.2rem solid $color-red;
+          border-bottom: 0.3rem solid $color-red;
 
           &:hover {
-            border-bottom: 0.2rem solid $color-red;
+            border-bottom: 0.3rem solid $color-red;
           }
         }
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a>
+        to improve your experience.
+      </p>
+    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+  </head>
+  <body>
+    <!-- Section no. 1 -->
+    <section class="contactFirst">
+      <div class="contactFirst__logo">
+        <h1 class="contactFirst__logo__h">WebMilo</h1>
+      </div>
+      <div class="contactFirst__menu">
+        <ul class="contactFirst__menu__ul">
+          <li class="contactFirst__menu__ul__li">
+            <a class="contactFirst__menu__ul__li__a" href="index.html">Home</a>
+          </li>
+          <li class="contactFirst__menu__ul__li">
+            <a class="contactFirst__menu__ul__li__a" href="about.html">About</a>
+          </li>
+          <li class="contactFirst__menu__ul__li">
+            <a class="contactFirst__menu__ul__li__a" href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li
+            class="
+              contactFirst__menu__ul__li contactFirst__menu__ul__li__current
+            "
+          >
+            <a class="contactFirst__menu__ul__li__a" href="#">Contact</a>
+          </li>
+          <li class="contactFirst__menu__ul__li">
+            <a href="#"
+              ><img
+                class="contactFirst__menu__ul__li__img"
+                src="./src/pol.png"
+                alt="polski"
+            /></a>
+          </li>
+          <li class="contactFirst__menu__ul__li">
+            <a href="#"
+              ><img
+                class="contactFirst__menu__ul__li__img"
+                src="./src/uk.png"
+                alt="english"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section no. 2 -->
+
+    <div class="contactSecond">
+      <h2 class="contactSecond__h">CONTACT</h2>
+      <div class="contactSecond__separator"></div>
+      <p class="contactSecond__p">Show me what you need</p>
+      <div class="contactSecond__main">
+        <form action="https://formsubmit.co/babciajanka5@wp.pl" method="POST">
+          <label for="name">Name*:</label>
+          <input type="text" name="name" required />
+          <label for="email">E-mail*:</label>
+          <input type="email" name="email" required />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Copyright &copy; WebMilo <span id="year">.</span> - All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="js/year.js"></script>
+  </body>
+</html>
