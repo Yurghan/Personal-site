@@ -1,1 +1,383 @@
-// Settings for other resolutions
+// ### Resolutions:
+
+// #### TV / Screen / Laptop:
+
+//      1.  7680x4320
+@media (min-width: 6000px) {
+  html {
+    font-size: 40px;
+  }
+}
+//      2.  3840x2160
+@media (min-width: 3500px) and (max-width: 5999px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+//      3.  2560x1440
+@media (min-width: 2300px) and (max-width: 3499px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+//      4.  1920x1080 -- native
+
+//      5.  1600x900
+//      6.  1536x864
+@media (min-width: 1500px) and (max-width: 1700px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+//      7.  1440x900
+//      8.  1366x768
+@media (min-width: 1350px) and (max-width: 1499px) {
+  html {
+    font-size: 7px;
+  }
+
+  @media (min-height: 800px) {
+    .sectionFirst {
+      &__logo {
+        &__h {
+          font-size: 5.6rem;
+        }
+      }
+      &__menu {
+        &__ul {
+          font-size: 3.6rem;
+        }
+      }
+    }
+
+    .sectionSecond {
+      &__partA {
+        &__p {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+
+    .sectionThird {
+      &__description {
+        margin-bottom: 4rem;
+      }
+
+      &__summary {
+        margin-top: 5rem;
+        &__h {
+          font-size: 3rem;
+        }
+        &__p {
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    .sectionFourth__choice__program__up__ul__li {
+      margin-bottom: 5rem;
+    }
+
+    .aboutFirst {
+      &__logo {
+        &__h {
+          font-size: 5.6rem;
+        }
+      }
+      &__menu {
+        &__ul {
+          font-size: 3.6rem;
+        }
+      }
+    }
+
+    .aboutSecond__main {
+      grid-template-columns: 35fr 65fr;
+
+      &__img {
+        width: 60rem;
+        height: 60rem;
+      }
+
+      &__txt {
+        padding: 2.5rem;
+        border-left: 0.8rem solid $color-red;
+
+        &__h {
+          font-size: 3.4rem;
+        }
+
+        &__p {
+          font-size: 2.6rem;
+          word-spacing: 1rem;
+          line-height: 4rem;
+        }
+      }
+    }
+
+    .contactFirst {
+      &__logo {
+        &__h {
+          font-size: 5.6rem;
+        }
+      }
+      &__menu {
+        &__ul {
+          font-size: 3.6rem;
+        }
+      }
+    }
+
+    .portfolioFirst {
+      &__logo {
+        &__h {
+          font-size: 5.6rem;
+        }
+      }
+      &__menu {
+        &__ul {
+          font-size: 3.6rem;
+        }
+      }
+    }
+  }
+}
+
+//      9.  1280x1024
+//      10. 1280x800
+//      11. 1280xx720
+@media (min-width: 1250px) and (max-width: 1349px) {
+  html {
+    font-size: 8px;
+  }
+
+  .sectionFirst {
+    &__logo {
+      &__h {
+        font-size: 4.4rem;
+      }
+    }
+    &__menu {
+      &__ul {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  .aboutFirst {
+    &__logo {
+      &__h {
+        font-size: 4.4rem;
+      }
+    }
+    &__menu {
+      &__ul {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  .contactFirst {
+    &__logo {
+      &__h {
+        font-size: 4.4rem;
+      }
+    }
+    &__menu {
+      &__ul {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  .portfolioFirst {
+    &__logo {
+      &__h {
+        font-size: 4.4rem;
+      }
+    }
+    &__menu {
+      &__ul {
+        font-size: 3.2rem;
+      }
+    }
+  }
+}
+
+//      12. 768x1024
+@media (min-width: 700px) and (max-width: 1249px) and (orientation: portrait) {
+  html {
+    font-size: 7px;
+  }
+
+  .aboutSecond {
+    &__p {
+      margin-bottom: 3rem;
+    }
+    &__main {
+      grid-template-columns: none;
+      grid-template-rows: 4fr 6fr;
+      height: 75vh;
+
+      &__img {
+        margin: auto;
+      }
+
+      &__txt {
+        border-top: 0.5rem solid $color-red;
+        border-left: none;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .contactSecond__main__form__web {
+    &__general {
+      width: 80rem;
+    }
+
+    &__amount {
+      width: 70%;
+      &__slider {
+        height: 2.5rem;
+      }
+    }
+  }
+
+  .aboutFirst {
+    height: 8vh;
+  }
+
+  .portfolioFirst {
+    height: 8vh;
+  }
+
+  .contactFirst {
+    height: 8vh;
+  }
+}
+
+// #### Tablets:
+
+//      1.  1366x1024  &   1024x1366
+//      2.  1280x800   &   800x1280
+
+@media (min-width: 700px) and (max-width: 1249px) and (min-height: 1050px) {
+  .sectionFirst__center__btn {
+    font-size: 3rem;
+
+    &__a {
+      padding: 2rem;
+    }
+  }
+
+  .sectionSecond {
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
+  .sectionThird {
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
+  .sectionFourth {
+    height: auto;
+
+    &__choice__program {
+      height: 40vh;
+    }
+
+    &__p2 {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .aboutSecond {
+    height: auto;
+    padding: 5rem 0;
+
+    &__main {
+      grid-template-columns: none;
+
+      &__img {
+        width: 60rem;
+        height: 60rem;
+      }
+
+      &__txt {
+        &__h {
+          font-size: 4rem;
+        }
+        &__p {
+          font-size: 3rem;
+          line-height: 4rem;
+        }
+      }
+    }
+  }
+
+  .aboutThird {
+    height: auto;
+    padding: 8rem 0;
+  }
+
+  .aboutFourth {
+    height: auto;
+  }
+
+  .portfolioSecond__main {
+    grid-template-columns: none;
+
+    &__item {
+      width: 60vw;
+    }
+  }
+}
+
+//      3.  1112x834   &   834x1112
+//      4.  1080x810   &   810x1080
+//      5.  1024x768   &   768x1024
+@media (min-width: 1000px) and (max-width: 1150px) and (min-height: 700px) {
+  html {
+    font-size: 7px;
+  }
+
+  @media (max-height: 780px) {
+    .contactSecond__main__form__web__amount {
+      width: 70%;
+    }
+  }
+}
+
+//      6.  1024x600   &   600x1024
+
+//      7.  962x601    &   601x962
+
+// #### Phones:
+
+//      1.  414x896    &    896x414
+//      2.  414x736    &    736x414
+
+//      3.  412x915    &    915x412
+//      4.  412x892    &    892x412
+
+//      5.  412x869    &    869x412
+//      6.  412x846    &    846x412
+
+//      7.  393x851    &    851x393
+//      8.  375x812    &    812x375
+
+//      9.  375x667    &    667x375
+//      10. 360x800    &    800x360
+
+//      11. 360x780    &    780x360
+//      12. 360x760    &    760x360
+
+//      13. 360x720    &    720x360
+//      14. 360x640    &    640x360
+
+//      15. 320x568    &    568x320

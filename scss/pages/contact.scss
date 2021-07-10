@@ -94,10 +94,162 @@
 
   &__p {
     font-size: 3.2rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
 
   &__main {
-    margin-bottom: 5rem;
+    width: 95vw;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    background: $color-light;
+    font-size: 1.8rem;
+
+    &__intro {
+      padding: 2rem;
+      margin-bottom: 2rem;
+      background-color: $color-grey;
+      text-align: justify;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1rem;
+      &__contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+
+        &__label {
+          margin-bottom: 1rem;
+        }
+
+        &__input {
+          width: 30rem;
+          margin-bottom: 2rem;
+          font-size: 1.8rem;
+        }
+
+        &__another {
+          width: 50rem;
+          height: 10rem;
+          margin-bottom: 1rem;
+          font-size: 1.8rem;
+          resize: none;
+        }
+
+        &__explanation {
+          padding: 2rem;
+          margin-bottom: 2rem;
+          background-color: $color-grey;
+          text-align: justify;
+        }
+      }
+
+      &__web {
+        margin-left: 0.5rem;
+        &__p {
+          margin: 1rem;
+        }
+
+        &__general {
+          width: 120rem;
+          height: 20rem;
+          font-size: 1.8rem;
+          resize: vertical;
+        }
+
+        &__explanation {
+          padding: 2rem;
+          margin: 3rem 0rem 1rem;
+          background-color: $color-grey;
+          text-align: justify;
+
+          &__p {
+            margin-bottom: 1rem;
+          }
+        }
+
+        &__amount {
+          display: grid;
+          grid-template-columns: 2fr 1fr 7fr;
+          width: 50%;
+          margin: 2rem 0;
+
+          &__slider {
+            overflow: hidden;
+            width: auto;
+            border-radius: 1rem;
+            background-color: $color-dark;
+            -webkit-appearance: none;
+
+            &::-webkit-slider-thumb {
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 50%;
+              background: $color-red;
+              cursor: ew-resize;
+              -webkit-appearance: none;
+            }
+
+            &::-moz-range-progress {
+              background-color: $color-red;
+            }
+
+            &::-moz-range-track {
+              background-color: $color-dark;
+            }
+
+            &::-ms-fill-lower {
+              background-color: $color-red;
+            }
+
+            &::-ms-fill-upper {
+              background-color: $color-dark;
+            }
+          }
+        }
+
+        &__module {
+          display: grid;
+          grid-template-columns: 9fr 1fr;
+          width: 50rem;
+          margin-bottom: 1rem;
+
+          &__checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.2rem;
+            height: 2.2rem;
+            background: $color-dark;
+            cursor: pointer;
+            -webkit-appearance: none;
+
+            &:checked {
+              &:before {
+                font-weight: bold;
+                color: $color-red;
+                font-size: 1.5rem;
+                content: '\2713';
+              }
+            }
+          }
+        }
+      }
+
+      &__send {
+        padding: 1rem;
+        border: none;
+        margin-top: 2rem;
+        background: $color-dark;
+        color: $color-light;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
   }
 }

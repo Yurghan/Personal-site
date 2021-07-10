@@ -100,8 +100,9 @@
 
   &__main {
     display: grid;
-    width: 90vw;
     grid-template-columns: 3fr 7fr;
+    align-items: center;
+    width: 90vw;
 
     &__img {
       width: 50rem;
@@ -110,6 +111,9 @@
     }
 
     &__txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 2rem;
       border-left: 0.5rem solid $color-red;
       background: $color-light;

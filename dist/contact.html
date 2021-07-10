@@ -78,13 +78,237 @@
       <h2 class="contactSecond__h">CONTACT</h2>
       <div class="contactSecond__separator"></div>
       <p class="contactSecond__p">Show me what you need</p>
+
       <div class="contactSecond__main">
-        <form action="https://formsubmit.co/babciajanka5@wp.pl" method="POST">
-          <label for="name">Name*:</label>
-          <input type="text" name="name" required />
-          <label for="email">E-mail*:</label>
-          <input type="email" name="email" required />
-          <button type="submit">Send</button>
+        <p class="contactSecond__main__intro">
+          Describe what you expect from your website. Thanks to this, I will be
+          able to determine the cost and time of its implementation. If you are
+          not sure about any of the answers - that's okay. You may not
+          understand some of points and this is fully understandable. Before you
+          decide whether you want to use my services, I will advise you on the
+          best solutions and answer your questions for free. Sending the form
+          does not oblige you to anything.
+        </p>
+
+        <form
+          class="contactSecond__main__form"
+          action="https://formsubmit.co/babciajanka5@wp.pl"
+          method="POST"
+        >
+          <div class="contactSecond__main__form__contact">
+            <label class="contactSecond__main__form__contact__label" for="name"
+              >Name*:</label
+            >
+            <input
+              class="contactSecond__main__form__contact__input"
+              type="text"
+              name="name"
+              required
+            />
+
+            <label class="contactSecond__main__form__contact__label" for="email"
+              >E-mail*:</label
+            >
+            <input
+              class="contactSecond__main__form__contact__input"
+              type="email"
+              name="email"
+              required
+            />
+
+            <label
+              class="contactSecond__main__form__contact__label"
+              for="another"
+              >Other form of contact:</label
+            >
+            <textarea
+              class="contactSecond__main__form__contact__another"
+              name="another"
+              id="anotehr"
+            ></textarea>
+
+            <p class="contactSecond__main__form__contact__explanation">
+              In the 'other form of contact' field, you can enter a more
+              convenient form of contact than email. For example: Messenger
+              (Name + Surname), WhatsApp (nickname), Skype (nickname). Please
+              let me know what communication method you choose and enter your
+              nickname. Maintaining e-mail contact makes it longer for me to get
+              to know your needs. If you are from Poland, providing a phone
+              number will be the best idea.
+            </p>
+          </div>
+
+          <div class="contactSecond__main__form__web">
+            <p class="contactSecond__main__form__web__p">
+              Describe in a few sentences what website you need. What do you
+              want on it? What function is it supposed to perform? Do you have
+              any idea what it should look like? Let me know what you need and
+              ask questions if you want me to advise something*:
+            </p>
+            <textarea
+              class="contactSecond__main__form__web__general"
+              name="general"
+              id="general"
+              required
+            ></textarea>
+
+            <p class="contactSecond__main__form__web__p">
+              If you would like your website to be made in a similar style to an
+              existing website - here you can enter the addresses of these
+              websites and a description of what elements you like. If you do
+              not know such pages - leave the field blank:
+            </p>
+            <textarea
+              class="contactSecond__main__form__web__general"
+              name="sites"
+              id="sites"
+            ></textarea>
+
+            <div class="contactSecond__main__form__web__amount">
+              <label
+                class="contactSecond__main__form__web__amount__label"
+                for="pages"
+                >Amount of pages:</label
+              >
+              <div
+                class="contactSecond__main__form__web__amount__value"
+                id="out"
+              >
+                5
+              </div>
+              <input
+                class="contactSecond__main__form__web__amount__slider"
+                type="range"
+                min="1"
+                max="20"
+                value="5"
+                name="pages"
+                id="pages"
+              />
+            </div>
+
+            <div class="contactSecond__main__form__web__module">
+              <label
+                class="contactSecond__main__form__web__module__label"
+                for="rwd"
+                >Responsive Web Design:
+              </label>
+              <input
+                class="contactSecond__main__form__web__module__checkbox"
+                type="checkbox"
+                name="rwd"
+                id="rwd"
+                checked
+                onclick="return false;"
+              />
+            </div>
+
+            <div class="contactSecond__main__form__web__module">
+              <label
+                class="contactSecond__main__form__web__module__label"
+                for="seo"
+                >On-Page Search Engine Optimization :
+              </label>
+              <input
+                class="contactSecond__main__form__web__module__checkbox"
+                type="checkbox"
+                name="seo"
+                id="seo"
+              />
+            </div>
+
+            <div class="contactSecond__main__form__web__module">
+              <label
+                class="contactSecond__main__form__web__module__label"
+                for="domain"
+                >Help with domain and hosting + custom email:
+              </label>
+              <input
+                class="contactSecond__main__form__web__module__checkbox"
+                type="checkbox"
+                name="domain"
+                id="domain"
+              />
+            </div>
+
+            <div class="contactSecond__main__form__web__module">
+              <label
+                class="contactSecond__main__form__web__module__label"
+                for="cms"
+                >CMS - WordPress:
+              </label>
+              <input
+                class="contactSecond__main__form__web__module__checkbox"
+                type="checkbox"
+                name="cms"
+                id="cms"
+              />
+            </div>
+
+            <div class="contactSecond__main__form__web__module">
+              <label
+                class="contactSecond__main__form__web__module__label"
+                for="woo"
+                >Online Shop - WooCommerce:
+              </label>
+              <input
+                class="contactSecond__main__form__web__module__checkbox"
+                type="checkbox"
+                name="woo"
+                id="woo"
+              />
+            </div>
+
+            <div class="contactSecond__main__form__web__explanation">
+              <p class="contactSecond__main__form__web__explanation__p">
+                1. Determine the number of pages on the website - if you do not
+                know the number, please provide an approximate one. For large
+                sites, just leave the number 20.
+              </p>
+
+              <p class="contactSecond__main__form__web__explanation__p">
+                2. Responsive Web Design (RWD) - over 50% of all internet
+                traffic comes from mobile devices. Currently, this type of
+                design is necessary, so every website I create uses RWD.
+              </p>
+
+              <p class="contactSecond__main__form__web__explanation__p">
+                3. On-Page Search Engine Optimization - I will make changes to
+                the website structure to help achieve good results in Google
+                (highly recommended).
+              </p>
+
+              <p class="contactSecond__main__form__web__explanation__p">
+                4. Help with domain and hosting + custom email - you can
+                purchase and transfer yourself or outsource this work to me
+                (recommended).
+              </p>
+
+              <p class="contactSecond__main__form__web__explanation__p">
+                5. CMS - WordPress - if you want to add your content while the
+                website is running, it will be a good choice.
+              </p>
+
+              <p class="contactSecond__main__form__web__explanation__p">
+                6. Online Shop - WooCommerce - If you want to sell on the
+                Internet.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hidden part -->
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Your message to WebMilo.com was sended correctly"
+          />
+          <!-- <input type="hidden" name="_subject" value="Webmilo - Your Website" /> -->
+          <input type="hidden" name="_next" value="https://google.com" />
+          <input type="hidden" name="_template" value="table" />
+
+          <button class="contactSecond__main__form__send" type="submit">
+            Send
+          </button>
         </form>
       </div>
     </div>
@@ -96,5 +320,6 @@
     </footer>
 
     <script src="js/year.js"></script>
+    <script src="js/range.js"></script>
   </body>
 </html>
