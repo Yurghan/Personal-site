@@ -6,8 +6,8 @@
 
 html {
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-  font-size: 10px; }
+  font-size: 10px;
+  font-family: 'Lato', sans-serif; }
 
 body::-webkit-scrollbar {
   width: 1rem; }
@@ -37,186 +37,255 @@ h5,
 h6 {
   font-weight: 400; }
 
-@media (min-width: 6000px) {
+input,
+textarea {
+  font-family: 'Lato', sans-serif; }
+
+@media all and (max-width: 1400px) and (min-width: 500px) and (min-height: 550px) {
+  .aboutSecond {
+    height: auto; }
+  .aboutThird {
+    height: auto; }
+  .aboutFourth {
+    height: auto; } }
+
+@media all and (max-width: 499px), (max-height: 499px) {
+  html {
+    font-size: 6px; }
+  .sectionFirst {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 2fr 2fr 6fr;
+    grid-template-areas: 'lo me' '. me' 'ce ce';
+    background: #333; }
+    .sectionFirst__menu__ul {
+      flex-direction: column;
+      align-items: flex-end; }
+    .sectionFirst__center {
+      margin-top: 5vh; }
+      .sectionFirst__center__introduction {
+        display: none; }
+      .sectionFirst__center__explanation {
+        font-size: 4rem;
+        text-align: center; }
+      .sectionFirst__center__btn {
+        font-size: 2.6rem; }
+        .sectionFirst__center__btn__a {
+          padding: 2.5rem; }
+  .sectionSecond {
+    grid-template-rows: none;
+    height: auto;
+    margin-bottom: 5rem; }
+    .sectionSecond__partA__descriptions {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .sectionSecond__partA__descriptions__module {
+        width: 90vw; }
+    .sectionSecond__partB {
+      display: none; }
+  .sectionThird {
+    height: auto; }
+    .sectionThird__process {
+      display: flex;
+      flex-direction: column; }
+      .sectionThird__process__module:nth-child(1), .sectionThird__process__module:nth-child(3) {
+        background: #cccccc; }
+      .sectionThird__process__module:nth-child(2), .sectionThird__process__module:nth-child(4) {
+        background: #f4f4f4; }
+  .sectionFourth {
+    height: auto;
+    margin: 5rem 0; }
+    .sectionFourth__choice {
+      display: flex;
+      flex-direction: column; }
+      .sectionFourth__choice__program {
+        grid-template-rows: none;
+        margin-bottom: 3rem;
+        width: 70vw;
+        height: 50vh; }
+  .aboutFirst {
+    grid-template-columns: none;
+    justify-content: center; }
+    .aboutFirst__menu__ul {
+      font-size: 2rem; }
+    .aboutFirst__logo {
+      display: none; }
+  .aboutSecond {
+    height: auto; }
+  .aboutThird {
+    height: auto; }
+  .aboutFourth {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+  .portfolioFirst {
+    grid-template-columns: none;
+    justify-content: center; }
+    .portfolioFirst__menu__ul {
+      font-size: 2rem; }
+    .portfolioFirst__logo {
+      display: none; }
+  .portfolioSecond__main {
+    display: flex;
+    flex-direction: column; }
+    .portfolioSecond__main__item {
+      width: 70vw;
+      height: 30vh; }
+  .contactFirst {
+    grid-template-columns: none;
+    justify-content: center; }
+    .contactFirst__menu__ul {
+      font-size: 2rem; }
+    .contactFirst__logo {
+      display: none; }
+  .contactSecond__main__form__web__general {
+    height: 30rem; }
+  .contactSecond__main__form__web__amount {
+    grid-template-columns: 3fr 1fr 6fr;
+    width: 100%; }
+  .contactSecond__main__form__web__module {
+    width: 100%;
+    margin-bottom: 2rem; }
+    .contactSecond__main__form__web__module__checkbox {
+      width: 3rem;
+      height: 3rem; }
+  .contactSecond__main__form__send {
+    padding: 3rem; } }
+
+@media all and (max-width: 499px) and (max-height: 499px), (max-height: 499px) and (max-height: 499px) {
+  .sectionFirst {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas: 'lo me' 'ce ce';
+    background: #333; }
+    .sectionFirst__menu__ul {
+      flex-direction: row;
+      justify-content: flex-end; }
+    .sectionFirst__center {
+      margin-top: 20vh; }
+      .sectionFirst__center__introduction {
+        display: none; }
+      .sectionFirst__center__explanation {
+        font-size: 4rem;
+        text-align: center; }
+      .sectionFirst__center__btn {
+        font-size: 2.6rem; }
+        .sectionFirst__center__btn__a {
+          padding: 2.5rem; }
+  .sectionFourth__choice__program {
+    width: 50vw;
+    height: 90vh; }
+  .aboutFirst {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    background: #333; }
+    .aboutFirst__logo {
+      display: block; }
+    .aboutFirst__menu__ul {
+      flex-direction: row;
+      justify-content: flex-end;
+      font-size: 2.4rem; }
+  .portfolioFirst {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    background: #333; }
+    .portfolioFirst__logo {
+      display: block; }
+    .portfolioFirst__menu__ul {
+      flex-direction: row;
+      justify-content: flex-end;
+      font-size: 2.4rem; }
+  .contactFirst {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    background: #333; }
+    .contactFirst__logo {
+      display: block; }
+    .contactFirst__menu__ul {
+      flex-direction: row;
+      justify-content: flex-end;
+      font-size: 2.4rem; } }
+
+@media all and (min-width: 6000px) {
   html {
     font-size: 40px; } }
 
-@media (min-width: 3500px) and (max-width: 5999px) {
+@media all and (min-width: 2800px) and (max-width: 5999px) {
   html {
     font-size: 20px; } }
 
-@media (min-width: 2300px) and (max-width: 3499px) {
+@media all and (min-width: 2000px) and (max-width: 2799px) {
   html {
-    font-size: 13px; } }
+    font-size: 14px; } }
 
-@media (min-width: 1500px) and (max-width: 1700px) {
+@media all and (min-width: 1380px) and (max-width: 1650px) {
   html {
     font-size: 8px; } }
 
-@media (min-width: 1350px) and (max-width: 1499px) {
+@media all and (min-width: 1200px) and (max-width: 1379px) {
   html {
     font-size: 7px; } }
 
-@media (min-width: 1350px) and (max-width: 1499px) and (min-height: 800px) {
-  .sectionFirst__logo__h {
-    font-size: 5.6rem; }
-  .sectionFirst__menu__ul {
-    font-size: 3.6rem; }
-  .sectionSecond__partA__p {
-    margin-bottom: 5rem; }
-  .sectionThird__description {
-    margin-bottom: 4rem; }
-  .sectionThird__summary {
-    margin-top: 5rem; }
-    .sectionThird__summary__h {
-      font-size: 3rem; }
-    .sectionThird__summary__p {
-      font-size: 2.4rem; }
+@media all and (min-width: 1200px) and (max-width: 1379px) and (min-height: 900px) {
   .sectionFourth__choice__program__up__ul__li {
-    margin-bottom: 5rem; }
-  .aboutFirst__logo__h {
-    font-size: 5.6rem; }
-  .aboutFirst__menu__ul {
-    font-size: 3.6rem; }
-  .aboutSecond__main {
-    grid-template-columns: 35fr 65fr; }
-    .aboutSecond__main__img {
-      width: 60rem;
-      height: 60rem; }
-    .aboutSecond__main__txt {
-      padding: 2.5rem;
-      border-left: 0.8rem solid #ef3c40; }
-      .aboutSecond__main__txt__h {
-        font-size: 3.4rem; }
-      .aboutSecond__main__txt__p {
-        font-size: 2.6rem;
-        word-spacing: 1rem;
-        line-height: 4rem; }
-  .contactFirst__logo__h {
-    font-size: 5.6rem; }
-  .contactFirst__menu__ul {
-    font-size: 3.6rem; }
-  .portfolioFirst__logo__h {
-    font-size: 5.6rem; }
-  .portfolioFirst__menu__ul {
-    font-size: 3.6rem; } }
+    margin-bottom: 5rem; } }
 
-@media (min-width: 1250px) and (max-width: 1349px) {
-  html {
-    font-size: 8px; }
-  .sectionFirst__logo__h {
-    font-size: 4.4rem; }
-  .sectionFirst__menu__ul {
-    font-size: 3.2rem; }
-  .aboutFirst__logo__h {
-    font-size: 4.4rem; }
-  .aboutFirst__menu__ul {
-    font-size: 3.2rem; }
-  .contactFirst__logo__h {
-    font-size: 4.4rem; }
-  .contactFirst__menu__ul {
-    font-size: 3.2rem; }
-  .portfolioFirst__logo__h {
-    font-size: 4.4rem; }
-  .portfolioFirst__menu__ul {
-    font-size: 3.2rem; } }
-
-@media (min-width: 700px) and (max-width: 1249px) and (orientation: portrait) {
+@media all and (min-width: 650px) and (max-width: 800px) and (min-height: 850px) {
   html {
     font-size: 7px; }
-  .aboutSecond__p {
-    margin-bottom: 3rem; }
-  .aboutSecond__main {
-    grid-template-columns: none;
-    grid-template-rows: 4fr 6fr;
-    height: 75vh; }
-    .aboutSecond__main__img {
-      margin: auto; }
-    .aboutSecond__main__txt {
-      border-top: 0.5rem solid #ef3c40;
-      border-left: none;
-      margin-top: 1rem; }
-  .contactSecond__main__form__web__general {
-    width: 80rem; }
-  .contactSecond__main__form__web__amount {
-    width: 70%; }
-    .contactSecond__main__form__web__amount__slider {
-      height: 2.5rem; }
-  .aboutFirst {
-    height: 8vh; }
-  .portfolioFirst {
-    height: 8vh; }
-  .contactFirst {
-    height: 8vh; } }
-
-@media (min-width: 700px) and (max-width: 1249px) and (min-height: 1050px) {
-  .sectionFirst__center__btn {
-    font-size: 3rem; }
-    .sectionFirst__center__btn__a {
-      padding: 2rem; }
-  .sectionSecond {
-    height: auto;
-    margin-bottom: 5rem; }
-  .sectionThird {
-    height: auto;
-    margin-bottom: 5rem; }
-  .sectionFourth {
-    height: auto; }
-    .sectionFourth__choice__program {
-      height: 40vh; }
-    .sectionFourth__p2 {
-      margin-bottom: 5rem; }
-  .aboutSecond {
-    height: auto;
-    padding: 5rem 0; }
-    .aboutSecond__main {
-      grid-template-columns: none; }
-      .aboutSecond__main__img {
-        width: 60rem;
-        height: 60rem; }
-      .aboutSecond__main__txt__h {
-        font-size: 4rem; }
-      .aboutSecond__main__txt__p {
-        font-size: 3rem;
-        line-height: 4rem; }
-  .aboutThird {
-    height: auto;
-    padding: 8rem 0; }
-  .aboutFourth {
-    height: auto; }
   .portfolioSecond__main {
-    grid-template-columns: none; }
+    display: flex;
+    flex-direction: column; }
     .portfolioSecond__main__item {
-      width: 60vw; } }
+      width: 70vw;
+      height: 40vh; } }
 
-@media (min-width: 1000px) and (max-width: 1150px) and (min-height: 700px) {
+@media all and (min-width: 500px) and (max-width: 1199px) {
   html {
-    font-size: 7px; } }
+    font-size: 7px; }
+  .portfolioSecond__main {
+    display: flex;
+    flex-direction: column; }
+    .portfolioSecond__main__item {
+      width: 70vw;
+      height: 40vh; } }
 
-@media (min-width: 1000px) and (max-width: 1150px) and (min-height: 700px) and (max-height: 780px) {
-  .contactSecond__main__form__web__amount {
-    width: 70%; } }
+@media all and (min-width: 500px) and (max-width: 1199px) and (max-height: 700px), all and (min-width: 500px) and (max-width: 1199px) and (max-width: 700px) {
+  html {
+    font-size: 6px; } }
+
+@media all and (min-width: 500px) and (max-width: 1199px) and (max-height: 700px) and (max-height: 700px), all and (min-width: 500px) and (max-width: 1199px) and (max-width: 700px) and (max-height: 700px) {
+  .portfolioSecond__main {
+    display: flex;
+    flex-direction: column; }
+    .portfolioSecond__main__item {
+      width: 50vw;
+      height: 50vh; } }
+
+@media all and (max-width: 330px), (max-height: 330px) {
+  html {
+    font-size: 5px; } }
 
 .contactFirst {
   display: grid;
   grid-template-columns: 3fr 7fr;
   width: 100vw;
-  height: 12vh;
   background: #333;
   color: #ffffff; }
-  .contactFirst__logo__h {
-    width: fit-content;
-    height: fit-content;
-    padding: 1.5rem;
-    border: 0.2rem solid #ffffff;
-    border-bottom-left-radius: 3rem;
-    border-top-right-radius: 3rem;
-    margin: 1rem;
-    font-family: 'Black Ops One', cursive;
-    font-size: 4.2rem;
-    font-weight: 400;
-    -webkit-text-stroke-width: 0.1rem;
-    -webkit-text-stroke-color: #000000; }
+  .contactFirst__logo {
+    margin: 1rem; }
+    .contactFirst__logo__h {
+      font-family: 'Black Ops One', cursive;
+      font-size: 5rem;
+      font-weight: 400;
+      -webkit-text-stroke-width: 0.1rem;
+      -webkit-text-stroke-color: #000000; }
+      .contactFirst__logo__h__dark {
+        color: #333;
+        -webkit-text-stroke-width: 0.1rem;
+        -webkit-text-stroke-color: #f4f4f4; }
   .contactFirst__menu__ul {
     display: flex;
     justify-content: flex-end;
@@ -286,14 +355,18 @@ h6 {
         flex-direction: column;
         margin-left: 0.5rem; }
         .contactSecond__main__form__contact__label {
-          margin-bottom: 1rem; }
+          margin-bottom: 1rem;
+          font-weight: 900; }
         .contactSecond__main__form__contact__input {
           width: 30rem;
+          height: 4rem;
+          padding: 1rem;
           margin-bottom: 2rem;
           font-size: 1.8rem; }
         .contactSecond__main__form__contact__another {
           width: 50rem;
-          height: 10rem;
+          height: 15rem;
+          padding: 1rem;
           margin-bottom: 1rem;
           font-size: 1.8rem;
           resize: none; }
@@ -305,10 +378,12 @@ h6 {
       .contactSecond__main__form__web {
         margin-left: 0.5rem; }
         .contactSecond__main__form__web__p {
-          margin: 1rem; }
+          margin: 1rem;
+          font-weight: 900; }
         .contactSecond__main__form__web__general {
-          width: 120rem;
+          width: 90%;
           height: 20rem;
+          padding: 1rem;
           font-size: 1.8rem;
           resize: vertical; }
         .contactSecond__main__form__web__explanation {
@@ -321,8 +396,9 @@ h6 {
         .contactSecond__main__form__web__amount {
           display: grid;
           grid-template-columns: 2fr 1fr 7fr;
-          width: 50%;
-          margin: 2rem 0; }
+          width: 90%;
+          margin: 2rem 0;
+          font-weight: 900; }
           .contactSecond__main__form__web__amount__slider {
             overflow: hidden;
             width: auto;
@@ -347,28 +423,30 @@ h6 {
         .contactSecond__main__form__web__module {
           display: grid;
           grid-template-columns: 9fr 1fr;
-          width: 50rem;
-          margin-bottom: 1rem; }
+          width: 90%;
+          margin-bottom: 2rem;
+          font-weight: 900; }
           .contactSecond__main__form__web__module__checkbox {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 2.2rem;
             height: 2.2rem;
-            background: #333;
+            border: 0.2rem solid #333;
+            background: #cccccc;
             cursor: pointer;
             -webkit-appearance: none; }
             .contactSecond__main__form__web__module__checkbox:checked:before {
-              font-weight: bold;
+              font-weight: 900;
               color: #ef3c40;
-              font-size: 1.5rem;
-              content: '\2713'; }
+              font-size: 1.7rem;
+              content: 'X'; }
       .contactSecond__main__form__send {
-        padding: 1rem;
+        padding: 2rem;
         border: none;
         margin-top: 2rem;
         background: #333;
         color: #f4f4f4;
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         text-transform: uppercase;
         cursor: pointer; }

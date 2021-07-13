@@ -1,24 +1,342 @@
+// Smaller screens and tablets
+@media all and (max-width: 1400px) and (min-width: 500px) and (min-height: 550px) {
+  .aboutSecond {
+    height: auto;
+  }
+
+  .aboutThird {
+    height: auto;
+  }
+
+  .aboutFourth {
+    height: auto;
+  }
+}
+
+// Phones
+@media all and (max-width: 499px), (max-height: 499px) {
+  // Main page
+
+  html {
+    font-size: 6px;
+  }
+
+  .sectionFirst {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 2fr 2fr 6fr;
+    grid-template-areas:
+      'lo me'
+      '. me'
+      'ce ce';
+    background: $color-dark;
+
+    &__menu {
+      &__ul {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    &__center {
+      margin-top: 5vh;
+
+      &__introduction {
+        display: none;
+      }
+
+      &__explanation {
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      &__btn {
+        font-size: 2.6rem;
+        &__a {
+          padding: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .sectionSecond {
+    grid-template-rows: none;
+    height: auto;
+    margin-bottom: 5rem;
+
+    &__partA {
+      &__descriptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__module {
+          width: 90vw;
+        }
+      }
+    }
+
+    &__partB {
+      display: none;
+    }
+  }
+
+  .sectionThird {
+    height: auto;
+
+    &__process {
+      display: flex;
+      flex-direction: column;
+
+      &__module {
+        &:nth-child(1),
+        &:nth-child(3) {
+          background: $color-grey;
+        }
+        &:nth-child(2),
+        &:nth-child(4) {
+          background: $color-light;
+        }
+      }
+    }
+  }
+
+  .sectionFourth {
+    height: auto;
+    margin: 5rem 0;
+
+    &__choice {
+      display: flex;
+      flex-direction: column;
+
+      &__program {
+        grid-template-rows: none;
+        margin-bottom: 3rem;
+        width: 70vw;
+        height: 50vh;
+      }
+    }
+  }
+
+  // About page
+
+  .aboutFirst {
+    grid-template-columns: none;
+    justify-content: center;
+
+    &__menu__ul {
+      font-size: 2rem;
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .aboutSecond {
+    height: auto;
+  }
+
+  .aboutThird {
+    height: auto;
+  }
+
+  .aboutFourth {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  // Porfolio page
+  .portfolioFirst {
+    grid-template-columns: none;
+    justify-content: center;
+
+    &__menu__ul {
+      font-size: 2rem;
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .portfolioSecond {
+    &__main {
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        width: 70vw;
+        height: 30vh;
+      }
+    }
+  }
+
+  // Contact page
+  .contactFirst {
+    grid-template-columns: none;
+    justify-content: center;
+
+    &__menu__ul {
+      font-size: 2rem;
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .contactSecond {
+    &__main__form {
+      &__web {
+        &__general {
+          height: 30rem;
+        }
+
+        &__amount {
+          grid-template-columns: 3fr 1fr 6fr;
+          width: 100%;
+        }
+
+        &__module {
+          width: 100%;
+          margin-bottom: 2rem;
+
+          &__checkbox {
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+      }
+
+      &__send {
+        padding: 3rem;
+      }
+    }
+  }
+
+  @media (max-height: 499px) {
+    .sectionFirst {
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      grid-template-rows: 2fr 8fr;
+      grid-template-areas:
+        'lo me'
+        'ce ce';
+      background: $color-dark;
+
+      &__menu {
+        &__ul {
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+      }
+
+      &__center {
+        margin-top: 20vh;
+
+        &__introduction {
+          display: none;
+        }
+
+        &__explanation {
+          font-size: 4rem;
+          text-align: center;
+        }
+
+        &__btn {
+          font-size: 2.6rem;
+          &__a {
+            padding: 2.5rem;
+          }
+        }
+      }
+    }
+
+    .sectionFourth__choice__program {
+      width: 50vw;
+      height: 90vh;
+    }
+
+    .aboutFirst {
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      background: $color-dark;
+
+      &__logo {
+        display: block;
+      }
+
+      &__menu {
+        &__ul {
+          flex-direction: row;
+          justify-content: flex-end;
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    .portfolioFirst {
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      background: $color-dark;
+
+      &__logo {
+        display: block;
+      }
+
+      &__menu {
+        &__ul {
+          flex-direction: row;
+          justify-content: flex-end;
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    .contactFirst {
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      background: $color-dark;
+
+      &__logo {
+        display: block;
+      }
+
+      &__menu {
+        &__ul {
+          flex-direction: row;
+          justify-content: flex-end;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
 // ### Resolutions:
 
 // #### TV / Screen / Laptop:
 
 //      1.  7680x4320
-@media (min-width: 6000px) {
+@media all and (min-width: 6000px) {
   html {
     font-size: 40px;
   }
 }
+
 //      2.  3840x2160
-@media (min-width: 3500px) and (max-width: 5999px) {
+@media all and (min-width: 2800px) and (max-width: 5999px) {
   html {
     font-size: 20px;
   }
 }
 
 //      3.  2560x1440
-@media (min-width: 2300px) and (max-width: 3499px) {
+@media all and (min-width: 2000px) and (max-width: 2799px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -26,237 +344,43 @@
 
 //      5.  1600x900
 //      6.  1536x864
-@media (min-width: 1500px) and (max-width: 1700px) {
+//      7.  1440x900
+@media all and (min-width: 1380px) and (max-width: 1650px) {
   html {
     font-size: 8px;
   }
 }
 
-//      7.  1440x900
 //      8.  1366x768
-@media (min-width: 1350px) and (max-width: 1499px) {
-  html {
-    font-size: 7px;
-  }
-
-  @media (min-height: 800px) {
-    .sectionFirst {
-      &__logo {
-        &__h {
-          font-size: 5.6rem;
-        }
-      }
-      &__menu {
-        &__ul {
-          font-size: 3.6rem;
-        }
-      }
-    }
-
-    .sectionSecond {
-      &__partA {
-        &__p {
-          margin-bottom: 5rem;
-        }
-      }
-    }
-
-    .sectionThird {
-      &__description {
-        margin-bottom: 4rem;
-      }
-
-      &__summary {
-        margin-top: 5rem;
-        &__h {
-          font-size: 3rem;
-        }
-        &__p {
-          font-size: 2.4rem;
-        }
-      }
-    }
-
-    .sectionFourth__choice__program__up__ul__li {
-      margin-bottom: 5rem;
-    }
-
-    .aboutFirst {
-      &__logo {
-        &__h {
-          font-size: 5.6rem;
-        }
-      }
-      &__menu {
-        &__ul {
-          font-size: 3.6rem;
-        }
-      }
-    }
-
-    .aboutSecond__main {
-      grid-template-columns: 35fr 65fr;
-
-      &__img {
-        width: 60rem;
-        height: 60rem;
-      }
-
-      &__txt {
-        padding: 2.5rem;
-        border-left: 0.8rem solid $color-red;
-
-        &__h {
-          font-size: 3.4rem;
-        }
-
-        &__p {
-          font-size: 2.6rem;
-          word-spacing: 1rem;
-          line-height: 4rem;
-        }
-      }
-    }
-
-    .contactFirst {
-      &__logo {
-        &__h {
-          font-size: 5.6rem;
-        }
-      }
-      &__menu {
-        &__ul {
-          font-size: 3.6rem;
-        }
-      }
-    }
-
-    .portfolioFirst {
-      &__logo {
-        &__h {
-          font-size: 5.6rem;
-        }
-      }
-      &__menu {
-        &__ul {
-          font-size: 3.6rem;
-        }
-      }
-    }
-  }
-}
-
 //      9.  1280x1024
 //      10. 1280x800
 //      11. 1280xx720
-@media (min-width: 1250px) and (max-width: 1349px) {
+@media all and (min-width: 1200px) and (max-width: 1379px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
-
-  .sectionFirst {
-    &__logo {
-      &__h {
-        font-size: 4.4rem;
-      }
-    }
-    &__menu {
-      &__ul {
-        font-size: 3.2rem;
-      }
-    }
-  }
-
-  .aboutFirst {
-    &__logo {
-      &__h {
-        font-size: 4.4rem;
-      }
-    }
-    &__menu {
-      &__ul {
-        font-size: 3.2rem;
-      }
-    }
-  }
-
-  .contactFirst {
-    &__logo {
-      &__h {
-        font-size: 4.4rem;
-      }
-    }
-    &__menu {
-      &__ul {
-        font-size: 3.2rem;
-      }
-    }
-  }
-
-  .portfolioFirst {
-    &__logo {
-      &__h {
-        font-size: 4.4rem;
-      }
-    }
-    &__menu {
-      &__ul {
-        font-size: 3.2rem;
-      }
+  @media (min-height: 900px) {
+    .sectionFourth__choice__program__up__ul__li {
+      margin-bottom: 5rem;
     }
   }
 }
-
 //      12. 768x1024
-@media (min-width: 700px) and (max-width: 1249px) and (orientation: portrait) {
+@media all and (min-width: 650px) and (max-width: 800px) and (min-height: 850px) {
   html {
     font-size: 7px;
   }
 
-  .aboutSecond {
-    &__p {
-      margin-bottom: 3rem;
-    }
+  .portfolioSecond {
     &__main {
-      grid-template-columns: none;
-      grid-template-rows: 4fr 6fr;
-      height: 75vh;
+      display: flex;
+      flex-direction: column;
 
-      &__img {
-        margin: auto;
-      }
-
-      &__txt {
-        border-top: 0.5rem solid $color-red;
-        border-left: none;
-        margin-top: 1rem;
+      &__item {
+        width: 70vw;
+        height: 40vh;
       }
     }
-  }
-
-  .contactSecond__main__form__web {
-    &__general {
-      width: 80rem;
-    }
-
-    &__amount {
-      width: 70%;
-      &__slider {
-        height: 2.5rem;
-      }
-    }
-  }
-
-  .aboutFirst {
-    height: 8vh;
-  }
-
-  .portfolioFirst {
-    height: 8vh;
-  }
-
-  .contactFirst {
-    height: 8vh;
   }
 }
 
@@ -265,119 +389,69 @@
 //      1.  1366x1024  &   1024x1366
 //      2.  1280x800   &   800x1280
 
-@media (min-width: 700px) and (max-width: 1249px) and (min-height: 1050px) {
-  .sectionFirst__center__btn {
-    font-size: 3rem;
-
-    &__a {
-      padding: 2rem;
-    }
-  }
-
-  .sectionSecond {
-    height: auto;
-    margin-bottom: 5rem;
-  }
-
-  .sectionThird {
-    height: auto;
-    margin-bottom: 5rem;
-  }
-
-  .sectionFourth {
-    height: auto;
-
-    &__choice__program {
-      height: 40vh;
-    }
-
-    &__p2 {
-      margin-bottom: 5rem;
-    }
-  }
-
-  .aboutSecond {
-    height: auto;
-    padding: 5rem 0;
-
-    &__main {
-      grid-template-columns: none;
-
-      &__img {
-        width: 60rem;
-        height: 60rem;
-      }
-
-      &__txt {
-        &__h {
-          font-size: 4rem;
-        }
-        &__p {
-          font-size: 3rem;
-          line-height: 4rem;
-        }
-      }
-    }
-  }
-
-  .aboutThird {
-    height: auto;
-    padding: 8rem 0;
-  }
-
-  .aboutFourth {
-    height: auto;
-  }
-
-  .portfolioSecond__main {
-    grid-template-columns: none;
-
-    &__item {
-      width: 60vw;
-    }
-  }
-}
-
 //      3.  1112x834   &   834x1112
 //      4.  1080x810   &   810x1080
 //      5.  1024x768   &   768x1024
-@media (min-width: 1000px) and (max-width: 1150px) and (min-height: 700px) {
+//      6.  1024x600   &   600x1024
+//      7.  962x601    &   601x962
+@media all and (min-width: 500px) and (max-width: 1199px) {
   html {
     font-size: 7px;
   }
 
-  @media (max-height: 780px) {
-    .contactSecond__main__form__web__amount {
-      width: 70%;
+  .portfolioSecond {
+    &__main {
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        width: 70vw;
+        height: 40vh;
+      }
+    }
+  }
+
+  @media (max-height: 700px), (max-width: 700px) {
+    html {
+      font-size: 6px;
+    }
+
+    @media (max-height: 700px) {
+      .portfolioSecond {
+        &__main {
+          display: flex;
+          flex-direction: column;
+
+          &__item {
+            width: 50vw;
+            height: 50vh;
+          }
+        }
+      }
     }
   }
 }
-
-//      6.  1024x600   &   600x1024
-
-//      7.  962x601    &   601x962
 
 // #### Phones:
 
 //      1.  414x896    &    896x414
 //      2.  414x736    &    736x414
-
 //      3.  412x915    &    915x412
 //      4.  412x892    &    892x412
-
 //      5.  412x869    &    869x412
 //      6.  412x846    &    846x412
-
 //      7.  393x851    &    851x393
 //      8.  375x812    &    812x375
-
 //      9.  375x667    &    667x375
 //      10. 360x800    &    800x360
-
 //      11. 360x780    &    780x360
 //      12. 360x760    &    760x360
-
 //      13. 360x720    &    720x360
 //      14. 360x640    &    640x360
 
 //      15. 320x568    &    568x320
+@media all and (max-width: 330px), (max-height: 330px) {
+  html {
+    font-size: 5px;
+  }
+}
