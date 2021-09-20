@@ -13,14 +13,50 @@
   }
 }
 
+// Touch screen devices
+@media (pointer: coarse) {
+  .portfolioSecond__main__item {
+    &__txt__btn__a {
+      display: none;
+    }
+    &__btn {
+      display: block;
+    }
+  }
+
+  .contactSecond__main__form__web {
+    &__general {
+      resize: none;
+    }
+
+    &__amount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: none;
+
+      &__value {
+        display: none;
+      }
+
+      &__slider {
+        display: none;
+      }
+
+      &__mobile {
+        display: block;
+      }
+    }
+  }
+}
+
 // Phones
 @media all and (max-width: 499px), (max-height: 499px) {
-  // Main page
-
   html {
     font-size: 6px;
   }
 
+  // Main page
   .sectionFirst {
     display: grid;
     grid-template-columns: 6fr 4fr;
@@ -125,7 +161,7 @@
     justify-content: center;
 
     &__menu__ul {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     &__logo {
@@ -191,12 +227,16 @@
     &__main__form {
       &__web {
         &__general {
-          height: 30rem;
+          height: 50rem;
         }
 
         &__amount {
-          grid-template-columns: 3fr 1fr 6fr;
-          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+
+          &__label {
+            margin-right: 2rem;
+          }
         }
 
         &__module {

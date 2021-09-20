@@ -148,6 +148,7 @@ textarea {
       flex-direction: column;
       align-items: flex-end; }
     .sectionFirst-pl__center {
+      grid-template-rows: 3fr 3fr 4fr;
       margin-top: 5vh; }
       .sectionFirst-pl__center__introduction {
         display: none; }

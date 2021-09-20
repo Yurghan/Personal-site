@@ -160,6 +160,7 @@
     }
 
     &__center {
+      grid-template-rows: 3fr 3fr 4fr;
       margin-top: 5vh;
 
       &__introduction {

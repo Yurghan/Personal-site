@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html translate="no">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,13 +41,13 @@
       <div class="contactFirst__menu">
         <ul class="contactFirst__menu__ul">
           <li class="contactFirst__menu__ul__li">
-            <a class="contactFirst__menu__ul__li__a" href="index.html">Home</a>
+            <a class="contactFirst__menu__ul__li__a" href="index">Home</a>
           </li>
           <li class="contactFirst__menu__ul__li">
-            <a class="contactFirst__menu__ul__li__a" href="about.html">About</a>
+            <a class="contactFirst__menu__ul__li__a" href="about">About</a>
           </li>
           <li class="contactFirst__menu__ul__li">
-            <a class="contactFirst__menu__ul__li__a" href="portfolio.html"
+            <a class="contactFirst__menu__ul__li__a" href="portfolio"
               >Portfolio</a
             >
           </li>
@@ -59,7 +59,7 @@
             <a class="contactFirst__menu__ul__li__a" href="#">Contact</a>
           </li>
           <li class="contactFirst__menu__ul__li">
-            <a href="html_pl/contact-pl.html"
+            <a href="contact-pl"
               ><img
                 class="contactFirst__menu__ul__li__img"
                 src="./src/pol.png"
@@ -98,12 +98,12 @@
 
         <form
           class="contactSecond__main__form"
-          action="https://formsubmit.co/babciajanka5@wp.pl"
+          action="https://formsubmit.co/6521c1a6ebf29d8053ab08f4c6e15263"
           method="POST"
         >
           <div class="contactSecond__main__form__contact">
             <label class="contactSecond__main__form__contact__label" for="name"
-              >1. Name*:</label
+              >1. Full Name*:</label
             >
             <input
               class="contactSecond__main__form__contact__input"
@@ -191,6 +191,13 @@
                 name="pages"
                 id="pages"
               />
+
+              <input
+                class="contactSecond__main__form__web__amount__mobile"
+                type="number"
+                name="mobile-number"
+                id="mobile-number"
+              />
             </div>
 
             <div class="contactSecond__main__form__web__module">
@@ -227,7 +234,7 @@
               <label
                 class="contactSecond__main__form__web__module__label"
                 for="domain"
-                >Help with domain and hosting + custom email:
+                >Help with domain and hosting:
               </label>
               <input
                 class="contactSecond__main__form__web__module__checkbox"
@@ -268,8 +275,7 @@
             <div class="contactSecond__main__form__web__explanation">
               <p class="contactSecond__main__form__web__explanation__p">
                 1. Determine the number of pages on the website - if you do not
-                know the number, please provide an approximate one. For large
-                sites, just leave the number 20.
+                know the number, please provide an approximate one.
               </p>
 
               <p class="contactSecond__main__form__web__explanation__p">
@@ -285,9 +291,8 @@
               </p>
 
               <p class="contactSecond__main__form__web__explanation__p">
-                4. Help with domain and hosting + custom email - you can
-                purchase and transfer yourself or outsource this work to me
-                (recommended).
+                4. Help with domain and hosting - you can purchase and transfer
+                yourself or outsource this work to me (recommended).
               </p>
 
               <p class="contactSecond__main__form__web__explanation__p">
@@ -297,7 +302,7 @@
 
               <p class="contactSecond__main__form__web__explanation__p">
                 6. Online Shop - WooCommerce - If you want to sell on the
-                Internet.
+                Internet. **Currently, the service is only available in Poland**
               </p>
             </div>
           </div>
@@ -309,7 +314,11 @@
             value="Your message to WebMilo.com was sended correctly"
           />
           <!-- <input type="hidden" name="_subject" value="Webmilo - Your Website" /> -->
-          <input type="hidden" name="_next" value="https://google.com" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://webmilo.com/thankyou"
+          />
           <input type="hidden" name="_template" value="table" />
 
           <button class="contactSecond__main__form__send" type="submit">

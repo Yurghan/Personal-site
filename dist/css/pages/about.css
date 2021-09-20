@@ -49,6 +49,25 @@ textarea {
   .aboutFourth {
     height: auto; } }
 
+@media (pointer: coarse) {
+  .portfolioSecond__main__item__txt__btn__a {
+    display: none; }
+  .portfolioSecond__main__item__btn {
+    display: block; }
+  .contactSecond__main__form__web__general {
+    resize: none; }
+  .contactSecond__main__form__web__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: none; }
+    .contactSecond__main__form__web__amount__value {
+      display: none; }
+    .contactSecond__main__form__web__amount__slider {
+      display: none; }
+    .contactSecond__main__form__web__amount__mobile {
+      display: block; } }
+
 @media all and (max-width: 499px), (max-height: 499px) {
   html {
     font-size: 6px; }
@@ -108,7 +127,7 @@ textarea {
     grid-template-columns: none;
     justify-content: center; }
     .aboutFirst__menu__ul {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
     .aboutFirst__logo {
       display: none; }
   .aboutSecond {
@@ -140,10 +159,12 @@ textarea {
     .contactFirst__logo {
       display: none; }
   .contactSecond__main__form__web__general {
-    height: 30rem; }
+    height: 50rem; }
   .contactSecond__main__form__web__amount {
-    grid-template-columns: 3fr 1fr 6fr;
-    width: 100%; }
+    display: flex;
+    justify-content: flex-start; }
+    .contactSecond__main__form__web__amount__label {
+      margin-right: 2rem; }
   .contactSecond__main__form__web__module {
     width: 100%;
     margin-bottom: 2rem; }

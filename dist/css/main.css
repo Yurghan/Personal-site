@@ -134,6 +134,25 @@ textarea {
   .aboutFourth {
     height: auto; } }
 
+@media (pointer: coarse) {
+  .portfolioSecond__main__item__txt__btn__a {
+    display: none; }
+  .portfolioSecond__main__item__btn {
+    display: block; }
+  .contactSecond__main__form__web__general {
+    resize: none; }
+  .contactSecond__main__form__web__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: none; }
+    .contactSecond__main__form__web__amount__value {
+      display: none; }
+    .contactSecond__main__form__web__amount__slider {
+      display: none; }
+    .contactSecond__main__form__web__amount__mobile {
+      display: block; } }
+
 @media all and (max-width: 499px), (max-height: 499px) {
   html {
     font-size: 6px; }
@@ -193,7 +212,7 @@ textarea {
     grid-template-columns: none;
     justify-content: center; }
     .aboutFirst__menu__ul {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
     .aboutFirst__logo {
       display: none; }
   .aboutSecond {
@@ -225,10 +244,12 @@ textarea {
     .contactFirst__logo {
       display: none; }
   .contactSecond__main__form__web__general {
-    height: 30rem; }
+    height: 50rem; }
   .contactSecond__main__form__web__amount {
-    grid-template-columns: 3fr 1fr 6fr;
-    width: 100%; }
+    display: flex;
+    justify-content: flex-start; }
+    .contactSecond__main__form__web__amount__label {
+      margin-right: 2rem; }
   .contactSecond__main__form__web__module {
     width: 100%;
     margin-bottom: 2rem; }
@@ -590,6 +611,25 @@ textarea {
   .aboutFourth {
     height: auto; } }
 
+@media (pointer: coarse) {
+  .portfolioSecond__main__item__txt__btn__a {
+    display: none; }
+  .portfolioSecond__main__item__btn {
+    display: block; }
+  .contactSecond__main__form__web__general {
+    resize: none; }
+  .contactSecond__main__form__web__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: none; }
+    .contactSecond__main__form__web__amount__value {
+      display: none; }
+    .contactSecond__main__form__web__amount__slider {
+      display: none; }
+    .contactSecond__main__form__web__amount__mobile {
+      display: block; } }
+
 @media all and (max-width: 499px), (max-height: 499px) {
   html {
     font-size: 6px; }
@@ -649,7 +689,7 @@ textarea {
     grid-template-columns: none;
     justify-content: center; }
     .aboutFirst__menu__ul {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
     .aboutFirst__logo {
       display: none; }
   .aboutSecond {
@@ -681,10 +721,12 @@ textarea {
     .contactFirst__logo {
       display: none; }
   .contactSecond__main__form__web__general {
-    height: 30rem; }
+    height: 50rem; }
   .contactSecond__main__form__web__amount {
-    grid-template-columns: 3fr 1fr 6fr;
-    width: 100%; }
+    display: flex;
+    justify-content: flex-start; }
+    .contactSecond__main__form__web__amount__label {
+      margin-right: 2rem; }
   .contactSecond__main__form__web__module {
     width: 100%;
     margin-bottom: 2rem; }
@@ -907,6 +949,12 @@ textarea {
         height: 100%;
         background: url(../src/items/item1.png) center center/cover;
         transition: all 0.5s ease-in-out; }
+      .portfolioSecond__main__item:nth-child(2) .portfolioSecond__main__item__img {
+        background: url(../src/items/item2.png) center center/cover; }
+      .portfolioSecond__main__item:nth-child(3) .portfolioSecond__main__item__img {
+        background: url(../src/items/item3.png) center center/cover; }
+      .portfolioSecond__main__item:nth-child(4) .portfolioSecond__main__item__img {
+        background: url(../src/items/item4.png) center center/cover; }
       .portfolioSecond__main__item__txt {
         position: absolute;
         z-index: 2;
@@ -941,6 +989,18 @@ textarea {
               background: #333;
               color: #f4f4f4;
               transition: all 0.2s ease-in-out; }
+      .portfolioSecond__main__item__btn {
+        position: absolute;
+        bottom: 3rem;
+        z-index: 5;
+        display: none; }
+        .portfolioSecond__main__item__btn__a {
+          width: 100%;
+          height: 100%;
+          padding: 3rem;
+          background: #333;
+          color: #f4f4f4;
+          font-size: 1.8rem; }
       .portfolioSecond__main__item:hover .portfolioSecond__main__item__cover {
         opacity: 0.9;
         transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
@@ -1004,6 +1064,25 @@ textarea {
   .aboutFourth {
     height: auto; } }
 
+@media (pointer: coarse) {
+  .portfolioSecond__main__item__txt__btn__a {
+    display: none; }
+  .portfolioSecond__main__item__btn {
+    display: block; }
+  .contactSecond__main__form__web__general {
+    resize: none; }
+  .contactSecond__main__form__web__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: none; }
+    .contactSecond__main__form__web__amount__value {
+      display: none; }
+    .contactSecond__main__form__web__amount__slider {
+      display: none; }
+    .contactSecond__main__form__web__amount__mobile {
+      display: block; } }
+
 @media all and (max-width: 499px), (max-height: 499px) {
   html {
     font-size: 6px; }
@@ -1063,7 +1142,7 @@ textarea {
     grid-template-columns: none;
     justify-content: center; }
     .aboutFirst__menu__ul {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
     .aboutFirst__logo {
       display: none; }
   .aboutSecond {
@@ -1095,10 +1174,12 @@ textarea {
     .contactFirst__logo {
       display: none; }
   .contactSecond__main__form__web__general {
-    height: 30rem; }
+    height: 50rem; }
   .contactSecond__main__form__web__amount {
-    grid-template-columns: 3fr 1fr 6fr;
-    width: 100%; }
+    display: flex;
+    justify-content: flex-start; }
+    .contactSecond__main__form__web__amount__label {
+      margin-right: 2rem; }
   .contactSecond__main__form__web__module {
     width: 100%;
     margin-bottom: 2rem; }
@@ -1289,114 +1370,38 @@ textarea {
     font-size: 3.2rem;
     margin-bottom: 5rem; }
   .contactSecond__main {
+    display: flex;
+    flex: 0 1 50%;
     width: 95vw;
     padding: 3rem;
     margin-bottom: 4rem;
     background: #f4f4f4;
     font-size: 1.8rem; }
-    .contactSecond__main__intro {
+    .contactSecond__main__left__intro {
       padding: 2rem;
       margin-bottom: 2rem;
       background-color: #cccccc;
       text-align: justify; }
-    .contactSecond__main__form {
+    .contactSecond__main__left__form {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-left: 1rem; }
-      .contactSecond__main__form__contact {
+      .contactSecond__main__left__form__contact {
         display: flex;
         flex-direction: column;
         margin-left: 0.5rem; }
-        .contactSecond__main__form__contact__label {
+        .contactSecond__main__left__form__contact__label {
           margin-bottom: 1rem;
           font-weight: 900; }
-        .contactSecond__main__form__contact__input {
-          width: 30rem;
+        .contactSecond__main__left__form__contact__input {
+          width: 35rem;
           height: 4rem;
           padding: 1rem;
           margin-bottom: 2rem;
           font-size: 1.8rem; }
-        .contactSecond__main__form__contact__another {
-          width: 50rem;
-          height: 15rem;
-          padding: 1rem;
-          margin-bottom: 1rem;
-          font-size: 1.8rem;
-          resize: none; }
-        .contactSecond__main__form__contact__explanation {
-          padding: 2rem;
-          margin-bottom: 2rem;
-          background-color: #cccccc;
-          text-align: justify; }
-      .contactSecond__main__form__web {
-        margin-left: 0.5rem; }
-        .contactSecond__main__form__web__p {
-          margin: 1rem;
-          font-weight: 900; }
-        .contactSecond__main__form__web__general {
-          width: 90%;
-          height: 20rem;
-          padding: 1rem;
-          font-size: 1.8rem;
-          resize: vertical; }
-        .contactSecond__main__form__web__explanation {
-          padding: 2rem;
-          margin: 3rem 0rem 1rem;
-          background-color: #cccccc;
-          text-align: justify; }
-          .contactSecond__main__form__web__explanation__p {
-            margin-bottom: 1rem; }
-        .contactSecond__main__form__web__amount {
-          display: grid;
-          grid-template-columns: 2fr 1fr 7fr;
-          width: 90%;
-          margin: 2rem 0;
-          font-weight: 900; }
-          .contactSecond__main__form__web__amount__slider {
-            overflow: hidden;
-            width: auto;
-            border-radius: 1rem;
-            background-color: #333;
-            -webkit-appearance: none; }
-            .contactSecond__main__form__web__amount__slider::-webkit-slider-thumb {
-              width: 1.5rem;
-              height: 1.5rem;
-              border-radius: 50%;
-              background: #ef3c40;
-              cursor: ew-resize;
-              -webkit-appearance: none; }
-            .contactSecond__main__form__web__amount__slider::-moz-range-progress {
-              background-color: #ef3c40; }
-            .contactSecond__main__form__web__amount__slider::-moz-range-track {
-              background-color: #333; }
-            .contactSecond__main__form__web__amount__slider::-ms-fill-lower {
-              background-color: #ef3c40; }
-            .contactSecond__main__form__web__amount__slider::-ms-fill-upper {
-              background-color: #333; }
-        .contactSecond__main__form__web__module {
-          display: grid;
-          grid-template-columns: 9fr 1fr;
-          width: 90%;
-          margin-bottom: 2rem;
-          font-weight: 900; }
-          .contactSecond__main__form__web__module__checkbox {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 2.2rem;
-            height: 2.2rem;
-            border: 0.2rem solid #333;
-            background: #cccccc;
-            cursor: pointer;
-            -webkit-appearance: none; }
-            .contactSecond__main__form__web__module__checkbox:checked:before {
-              font-weight: 900;
-              color: #ef3c40;
-              font-size: 1.7rem;
-              content: 'X'; }
-      .contactSecond__main__form__send {
+      .contactSecond__main__left__form__send {
         padding: 2rem;
         border: none;
         margin-top: 2rem;
@@ -1405,6 +1410,11 @@ textarea {
         font-size: 2.4rem;
         text-transform: uppercase;
         cursor: pointer; }
+    .contactSecond__main__right {
+      flex: 0 1 50%; }
+      .contactSecond__main__right__img {
+        width: 100%;
+        height: 100%; }
 
 * {
   box-sizing: border-box;
@@ -1456,6 +1466,25 @@ textarea {
     height: auto; }
   .aboutFourth {
     height: auto; } }
+
+@media (pointer: coarse) {
+  .portfolioSecond__main__item__txt__btn__a {
+    display: none; }
+  .portfolioSecond__main__item__btn {
+    display: block; }
+  .contactSecond__main__form__web__general {
+    resize: none; }
+  .contactSecond__main__form__web__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: none; }
+    .contactSecond__main__form__web__amount__value {
+      display: none; }
+    .contactSecond__main__form__web__amount__slider {
+      display: none; }
+    .contactSecond__main__form__web__amount__mobile {
+      display: block; } }
 
 @media all and (max-width: 499px), (max-height: 499px) {
   html {
@@ -1516,7 +1545,7 @@ textarea {
     grid-template-columns: none;
     justify-content: center; }
     .aboutFirst__menu__ul {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
     .aboutFirst__logo {
       display: none; }
   .aboutSecond {
@@ -1548,10 +1577,12 @@ textarea {
     .contactFirst__logo {
       display: none; }
   .contactSecond__main__form__web__general {
-    height: 30rem; }
+    height: 50rem; }
   .contactSecond__main__form__web__amount {
-    grid-template-columns: 3fr 1fr 6fr;
-    width: 100%; }
+    display: flex;
+    justify-content: flex-start; }
+    .contactSecond__main__form__web__amount__label {
+      margin-right: 2rem; }
   .contactSecond__main__form__web__module {
     width: 100%;
     margin-bottom: 2rem; }
@@ -1918,9 +1949,9 @@ textarea {
     text-align: center; }
     .sectionThird__summary__h {
       margin-top: 4rem;
-      font-size: 2.4rem; }
+      font-size: 2.6rem; }
     .sectionThird__summary__p {
-      font-size: 1.8rem; }
+      font-size: 2.2rem; }
 
 .sectionFourth {
   display: flex;
@@ -2159,6 +2190,7 @@ textarea {
       flex-direction: column;
       align-items: flex-end; }
     .sectionFirst-pl__center {
+      grid-template-rows: 3fr 3fr 4fr;
       margin-top: 5vh; }
       .sectionFirst-pl__center__introduction {
         display: none; }
@@ -2199,6 +2231,25 @@ textarea {
     height: auto; }
   .aboutFourth {
     height: auto; } }
+
+@media (pointer: coarse) {
+  .portfolioSecond__main__item__txt__btn__a {
+    display: none; }
+  .portfolioSecond__main__item__btn {
+    display: block; }
+  .contactSecond__main__form__web__general {
+    resize: none; }
+  .contactSecond__main__form__web__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: none; }
+    .contactSecond__main__form__web__amount__value {
+      display: none; }
+    .contactSecond__main__form__web__amount__slider {
+      display: none; }
+    .contactSecond__main__form__web__amount__mobile {
+      display: block; } }
 
 @media all and (max-width: 499px), (max-height: 499px) {
   html {
@@ -2259,7 +2310,7 @@ textarea {
     grid-template-columns: none;
     justify-content: center; }
     .aboutFirst__menu__ul {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
     .aboutFirst__logo {
       display: none; }
   .aboutSecond {
@@ -2291,10 +2342,12 @@ textarea {
     .contactFirst__logo {
       display: none; }
   .contactSecond__main__form__web__general {
-    height: 30rem; }
+    height: 50rem; }
   .contactSecond__main__form__web__amount {
-    grid-template-columns: 3fr 1fr 6fr;
-    width: 100%; }
+    display: flex;
+    justify-content: flex-start; }
+    .contactSecond__main__form__web__amount__label {
+      margin-right: 2rem; }
   .contactSecond__main__form__web__module {
     width: 100%;
     margin-bottom: 2rem; }

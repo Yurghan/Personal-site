@@ -4,6 +4,8 @@ WebMilo Web-Developer Website - July 2021
 
 Project status: FINISHED
 
+Preview: webmilo.com
+
 ## Technologies
 
 1. HTML
@@ -49,8 +51,8 @@ Project status: FINISHED
         text-align:
 
         //Other
-        Every other property I'm not able to put somewhere else.
-        For example - cursor, transform, animation.
+        Every other property I'm not able to put anywhere else.
+        For example - cursor, transform, animation etc.
     }
 
 ## Tested for:
@@ -122,4 +124,3 @@ Project status: FINISHED
      3. Firefox
      4. Edge
      5. Opera
-     6. IE
