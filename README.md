@@ -1,6 +1,5 @@
 # Personal site
-
-Personal site Web-Developer Website - July 2021
+Web-Developer Website - July 2021
 
 Project status: FINISHED
 
