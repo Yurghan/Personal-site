@@ -1,6 +1,6 @@
-# WebMilo
+# Personal site
 
-WebMilo Web-Developer Website - July 2021
+Personal site Web-Developer Website - July 2021
 
 Project status: FINISHED
 
